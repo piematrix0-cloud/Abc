@@ -1,85 +1,121 @@
-<html>
+html>
 
 <head>
 
-<title> Wish list </title>
+<script>
 
-</head>
+function dis(val)
 
-<body>
+{
 
-<center><h1> DREAMS </h1>
+document.getElementById("result").value+=val
 
-<img src="Dreams.jpg" height="200" width="200"></center>
+}
+<td><input type="button" value="6" onclick =^ prime prime dis (^ prime 6^ prime )^ prime prime /></td>
 
-<ol type="1">
-
-<li>Completing my diploma in civil engineering. </li>
-
-<li>Completing my Bachelor degree in a good engineering college.</li>
-
-<li>I want to work hard to score First class / Distinction.</li> </ol>
-
-<center><h2> OPPORTUNITIES </h2>
-
-<img src="Opportunities.jpg" height="200" width="200"></center>
-
-<ul>
-
-<li>Focus on what you can control and have a plan for the rest</li>
-
-<li>Go beyond immediate tasks and think of the big picture</li>
-
-<li>Do a periodic comparison of your annual goals with your to-do list</li></ul>
-
-<center><h3> CHALLENGES </h3>
-
-<img src="Challenges.png" height="200" width="400"></center>
-
-<table border="1">
-
-<tr>
-
-<th>SL NO</th>
-
-<th>CHALLENGE</th>
+<td><input type="button" value="-" onclick =^ prime prime dis (^ prime -^ prime prime )^ prime prime /><td>
 
 </tr>
 
 <tr>
 
-<td>1.</td>
+<td><input type="button" value="7" onclick="dis('7")"/> </td>
 
-<td>Putting your goals off until someday.</td>
+<td><input type="button" value="8" onclick =^ prime prime dis (^ prime 8^ prime )^ prime prime /></td>
 
-</tr>
+<td><input type="button" value="9" onclick =^ prime prime dis ("9^ prime )"/></td>
 
-<tr>
-
-<td>2.</td>
-
-<td>Waiting to take action until you 'feel' ready.</td>
+<td><input type="button" value="+" onclick =^ prime prime dis (^ prime +^ prime )^ prime prime /></td>
 
 </tr>
 
 <tr>
 
-<td>3.</td>
+<td><input type="button" value="." onclick="dis('.')"/> </td>
 
-<td>Viewing mistakes as failure.</td>
+<td><input type="button" value="0" onclick =^ prime prime dis (^ prime 0^ prime )^ prime prime /><td>
 
-</tr>
+<!-- solve function call function solve to evaluate value -->
 
-<tr>
+<td><input type="button" value="=" onclick="solve()"/> </td>
 
-<td>4.</td>
-
-<td>Not making your goal a priority.</td>
+<td><input type="button" value="*" onclick="dis('*')"/> </td>
 
 </tr>
 
 </table>
 
+</center>
+
 </body>
 
 </html>
+function solve()
+
+{
+
+let x = document.getElementById("result").value let y eval(x) document.getElementById("result").value = y
+
+}
+
+function clr()
+
+{ document.getElementById("result").value = ""
+
+}
+
+</script>
+
+<style>
+
+input
+
+{
+
+width:100%;
+
+padding:20px;
+
+background-color:cyan;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<center><h1>MY CALCULATOR</h1>
+
+<table border="1">
+
+<tr>
+
+<td colspan="3"><input type="text" id="result"/></td>
+
+<td><input type="button" value="Clear" onclick="clr()"/> </td>
+
+</tr>
+
+<tr>
+
+<!-- create button and assign value to each button -->
+
+<!-- dis("1") will call function dis to display value -->
+
+<td><input type="button" value="1" onclick="dis('1')"/> </td>
+
+<td><input type="button" value="2" onclick="dis('2')"/> </td>
+
+<td><input type="button" value="3" onclick="dis('3')"/> </td>
+
+<td><input type="button" value="/" onclick="dis('/')"/> </td>
+
+</tr>
+
+<td><input type="button" value="4" onclick="dis('4')"/> </td>
+
+<tr>
+
+<td><input type="button" value="5" onclick="dis('5')"
